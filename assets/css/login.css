@@ -22,6 +22,18 @@
 .logo-img{
 }
 
+h1{
+     width:100%;
+     font-size: 50;
+     font-family: "Helvetica Neue", sans-serif;   
+     margin: -10 0 30 0;
+    
+     
+}
+img{
+    margin: -20 0 25 5;
+    
+}
 
 .login-page {
   width: 360px;
@@ -48,6 +60,7 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form button {
   font-family: "Roboto", sans-serif;
@@ -62,6 +75,7 @@
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form button:hover,.form button:active,.form button:focus {
   background: #43A047;
