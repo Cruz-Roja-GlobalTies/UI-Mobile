@@ -5,7 +5,7 @@
 
 /* Reset */
 table#example {
-    border-collapse: collapse;   
+    border-collapse: collapse;
 }
 #example tr {
     background-color: ;
@@ -398,6 +398,7 @@ table#example {
 	.\36 u, .\36 u\24 {
 		width: 50%;
 		clear: none;
+    float: right;
 		margin-left: 0;
 	}
 
