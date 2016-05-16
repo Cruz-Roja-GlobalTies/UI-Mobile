@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script src="http://listjs.com/no-cdn/list.js"></script>
+		<script src="assets/js/priority-queue.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -52,7 +55,7 @@
 			<div id="main">
 
 				<!-- Intro -->
-					<section id="top" class="one dark cover" style="height:600px;">
+					<section id="top" class="one dark cover" >
 						<div class="container">
 
 							<header>
@@ -66,35 +69,69 @@
 
 
                 <p>Patient Queue</p>
+<div id="contacts">
+<table id="example" style="height:100%">
+	<thead style="border:solid" >
+	<tr>
+		<th class="sort" data-sort="id">ID</th>
+		<th class="sort" data-sort="name">Name</th>
+		<th class="sort" data-sort="age">Age</th>
+		<th class="sort" data-sort="city">City</th>
+		<th class="sort" data-sort="priority">priority</th>
+		<th colspan="2">
+			<input type="text" class="search" placeholder="Search contact" />
+		</th>
+	</tr>
+
+	</thead>
+	<tbody onload="clean()" class="list">
+	<tr style="text-align: center">
+
+		<td  class="id">1</td>
+		<td  class="name"></td>
+		<td  class="age"></td>
+		<td  class="city"></td>
+		<td  class="priority"></td>
+
+		<td class="edit"><button class="edit-item-btn">Edit</button></td>
+		<td class="remove"><button class="remove-item-btn">Remove</button></td>
+	</tr>
 
 
-<table id="example">
-<tr>
-    <th>&nbsp;</th>
-    <th>Caller</th>
-    <th>Address</th>
-
-</tr>
-<tr>
-    <td><a href="#portfolio" >View Info</a></td>
-    <td>Manuel Flores</td>
-    <td>4002 Camino Calma</td>
-
-</tr>
-<tr>
-    <td><a href="bananas">View Info</a></td>
-<td>Xavier Tejeda</td>
-<td>17703 E Newburgh St</td>
-
-</tr>
-<tr>
-    <td><a href="oranges">View Info</a></td>
-    <td>Kevin Dang</td>
-    <td>9500 Gilman Dr</td>
-
-</tr>
+	</tbody>
 </table>
+							<table>
+								<tr>
+									<td class="id">
+										<input type="number" id="id-field" placeholder="ID"/>
+									</td>
+									<td>
+										<input type="text" id="name-field" placeholder="Name" />
+									</td>
+									<td class="age">
+										<input type="number" id="age-field" placeholder="Age" />
+									</td>
+									<td class="city">
+										<input type="text" id="city-field" placeholder="Address" />
+									</td>
+									<td class="city">
+										<input type="number" id="priority-field" placeholder="priority" />
+									</td>
+								</tr>
+								<tr>
+									<td class="add">
+										<button id="add-btn">Add</button>
+									</td>
+									<td class="edit">
+										<button id="edit-btn">Edit</button>
+									</td>
+									<td class="sort">
+										<button id ="sort-btn">Sort</button>
+									</td>
+								</tr>
 
+</table>
+</div>
 
 
 
@@ -227,6 +264,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/this.js"></script>
 	</body>
 </html>
