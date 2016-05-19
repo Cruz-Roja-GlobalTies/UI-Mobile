@@ -24,6 +24,19 @@ table#example {
     cursor: pointer;
 }
 
+#add-btn, #sort-btn, #edit-btn{
+
+	border: 3px solid white;
+	width:100%;
+	background-color:Green;
+
+}
+#add-btn:hover, #sort-btn:hover, #edit-btn:hover{
+	background-color: red;
+
+}
+
+
 
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1593,6 +1606,7 @@ table#example {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
+		width: 95%;
 		color: #888;
 	}
 
@@ -1845,6 +1859,7 @@ table#example {
 		line-height: 1.25em;
 	}
 
+
 	form textarea {
 		min-height: 14em;
 	}
@@ -1893,6 +1908,7 @@ table#example {
 			}
 
 			table.default th {
+
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
 				color: #fff;
@@ -1932,7 +1948,9 @@ table#example {
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out;
+
 	}
+
 
 		input[type="button"]:hover,
 		input[type="submit"]:hover,
@@ -2101,7 +2119,7 @@ table#example {
 		}
 
 			#nav ul li a.active span:before {
-				color: #e27689;
+				color: #FF0000;
 			}
 
 /* Footer */
